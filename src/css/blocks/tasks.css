@@ -5,7 +5,7 @@
 
 .card-wrapper {
   border-top: 0.3rem solid transparent;
-  min-height: 48rem;
+  /* min-height: 48rem; */
   position: relative;
   flex-basis: 24%;
   display: inline-flex;
@@ -282,5 +282,19 @@
 
   .card-bottom [data-btn='primary'] {
     max-width: 100%;
+  }
+}
+
+.swiper-wrapper {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-wrapper {
+    flex-direction: column;
+    align-items: center
+  }
+  .swiper-slide {
+    width: 80% !important;
   }
 }
