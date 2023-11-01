@@ -196,7 +196,10 @@
   max-height: 100%;
 }
 
-/* pagination dynamic cards */
+/* swiper */
+.dynamic .swiper-pagination-bullet-active {
+  --swiper-theme-color: #0f62fe;
+}
 
 /* skeleton */
 .skeleton {
@@ -282,19 +285,5 @@
 
   .card-bottom [data-btn='primary'] {
     max-width: 100%;
-  }
-}
-
-.swiper-wrapper {
-  overflow-x: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .swiper-wrapper {
-    flex-direction: column;
-    align-items: center
-  }
-  .swiper-slide {
-    width: 80% !important;
   }
 }
