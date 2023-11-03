@@ -1,0 +1,44 @@
+body {
+    background-color: #8C30F5;
+}
+
+h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 18px;
+    color: #18191F;
+}
+
+p {
+    font-size: 14px;
+    color: #18191F;
+    width: 476px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.client-card {
+    width: 1440px;
+    height: 610px;
+}
+
+.left-card,
+.right-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    max-width: 540px;
+    max-height: 220px;
+    text-align: center;
+}
+.top-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block {
+    text-align: center;
+}
