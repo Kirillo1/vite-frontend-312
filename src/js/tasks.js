@@ -130,13 +130,11 @@ function displayTasksDetails() {
 
       <div class="details-information">
         <div class="information-descrption">
-          <h2 class="descrption-title">${cardInfo?.name}</h2>
+          <h2 class="descrption-title">${cardInfo?.name}.</h2>
           <h3 class="descrption-subtitle">${cardInfo?.description}</h3>
-
-          <h3 class="descrption-subtitle">Price:</h3>
-          <p>${cardInfo?.price}</p>
-          <h3 class="descrption-subtitle">Category:</h3>
-          <p>${cardInfo?.category}</p>
+          <h3 class="descrption-subtitle">Price: ${cardInfo?.price}</h3>
+          <h3 class="descrption-subtitle">Category: ${cardInfo?.category}</h3>
+          <h3 class="descrption-subtitle">Rating: ${cardInfo?.rating}</h3>
       </div>
     </div>
   `
