@@ -10,6 +10,7 @@ body {
 h1 {
     font-size: 48px;
     color: #FFFFFF;
+    margin-left: 10px;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h4 {
 .fz-14 {
     font-size: 14px;
     color: #FFFFFF;
-
+    display: contents;
 }
 
 p {
@@ -35,6 +36,7 @@ p {
     width: 476px;
     font-weight: 400;
     line-height: 24px;
+    display: inline-block;
 }
 .cards {
     display: flex;
@@ -43,9 +45,7 @@ p {
 
 
 .client-card {
-    width: 1140px;
     height: 610px;
-    justify-content: center;
 }
 
 .left-card,
@@ -55,10 +55,15 @@ p {
     max-width: 540px;
     min-height: 200px;
     text-align: center;
+    margin: 10px;
 }
 .top-block {
     display: flex;
     justify-content: space-between;
+}
+
+.name-prof {
+    width: 200px;
 }
 
 .card-bot {
@@ -72,3 +77,8 @@ p {
     text-align: center;
 }
 
+@media screen and (max-width: 959px) {
+    .cards {
+      display: grid;
+    }
+  }
