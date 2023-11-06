@@ -21,7 +21,7 @@
 .details-flex {
   display: flex;
   max-width: 100rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -81,7 +81,7 @@
   color: var(--subtitle-color);
 }
 
-.descrption-subtitle + p {
+.descrption-subtitle+p {
   margin-bottom: 20px;
 }
 
@@ -174,7 +174,7 @@
   --swiper-scrollbar-drag-bg-color: var(--gray-dark);
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -188,4 +188,20 @@
 
 .swiper-pagination-bullet-active {
   --swiper-theme-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .details-flex {
+    flex-direction: column;
+    align-items: center
+  }
+}
+
+.details-flex {
+  margin: auto;
+  align-items: center
+}
+
+.details-information {
+  justify-content: center;
 }
